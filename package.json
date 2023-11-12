@@ -1,0 +1,27 @@
+{
+  "name": "vue-ui",
+  "version": "1.0.6",
+  "module": "dist/vue-ui.mjs",
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "test": "cd playground && vite --port 3006",
+    "build": "vite build",
+    "preview": "vite preview",
+    "autopublish": "npm version patch && npm publish --registry http://localhost:4873/"
+  },
+  "dependencies": {
+    "element-plus": "2.4.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
+    "sass": "^1.69.5",
+    "vite": "^4.4.11",
+    "vue": "3.3.4"
+  }
+}
